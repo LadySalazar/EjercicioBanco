@@ -1,11 +1,12 @@
 public class CuentaCorriente extends Cuenta{
     double Intereses;
-    public CuentaCorriente(int identificacionCuenta, Tarjeta tarjetaseta, double monto, double intereses) {
+    public CuentaCorriente(int identificacionCuenta, Tarjeta tarjetaseta, double monto) {
         super(identificacionCuenta, tarjetaseta, monto);
-        Intereses = intereses;
+
     }
     public double DeterminarTasaInteres(){
-        return 0;
+        Intereses=Math.pow((1+0.3),(30/360));
+        return Intereses;
     }
 
 }
