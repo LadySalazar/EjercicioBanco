@@ -4,5 +4,8 @@ public class CuentaCorriente extends Cuenta{
         super(identificacionCuenta, tarjetaseta, monto);
         Intereses = intereses;
     }
+    public double DeterminarTasaInteres(){
+        return 0;
+    }
 
 }

@@ -8,5 +8,8 @@ public class Prestamo {
         this.especificacionesPrestamo = especificacionesPrestamo;
         this.monto = monto;
     }
+    public void RealizarPrestamo(Cliente cli){
+
+    }
 
 }

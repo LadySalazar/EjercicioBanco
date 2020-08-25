@@ -7,4 +7,5 @@ public class Banco {
         this.cuentas = cuentas;
         this.prestamos = prestamos;
     }
+
 }

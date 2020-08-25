@@ -9,4 +9,8 @@ public class Tarjeta {
         this.codigoSeguridad = codigoSeguridad;
         this.monto = monto;
     }
+    public String RealizarCompra(double valor){
+
+        return null;
+    }
 }
