@@ -10,7 +10,15 @@ public class Tarjeta {
         this.monto = monto;
     }
     public String RealizarCompra(double valor){
-
-        return null;
+        String RepuestaCompra=null;
+        if (monto>valor){
+            monto=monto-valor;
+            RepuestaCompra="LA COMPRA FUE REALIZADA";
+        }else{
+            if (monto<valor){
+                RepuestaCompra="LA COMPRA NO FUE REALIZADA, SALDO INSIFICIENTE";
+            }
+        }
+        return RepuestaCompra;
     }
 }
