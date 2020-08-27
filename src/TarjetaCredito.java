@@ -14,6 +14,13 @@ public class TarjetaCredito extends Tarjeta{
         return ConsulGasto;
     }
     public boolean PagarTarjeta(Cuenta cu, double montoPago){
-    
+    	 boolean res=false;
+        if(cu.monto>=montoPago){
+            cu.monto= cu.monto-montoPago;
+            res=true;
+        }else{
+            res=false;
+        }
+        return res;
     }
 }
